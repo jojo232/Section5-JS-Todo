@@ -1,2 +1,1 @@
-# uu
-Created with CodeSandbox
+# 簡単なメモアプリ
