@@ -40,3 +40,38 @@ Cこのidが持っているinputの値をこのinputtextに格納しているは
 - ボタンが押された時のイベント、addEventListenerで追加する、
 - しかし、この場合は一つずつIDを振るわけではないので、生成する時点で割り振っておく
 - appendChildにも作成した関数を記載する
+
+
+
+押された削除ボタンの親タグ　　(div)を未完了リストから削除
+今回はボタンの親要素であるdivを取得したいのでdivを取得していく
+pearentNodeで親要素を取得できる。
+どこから削除するかというと、未完了リストの配下を削除する。
+子要素から消す場合は、removeChildが利用可能。
+
+f未完了リストから指定の要素を削除
+targetを引数として受ける、渡されたtargetを未完了リストから削除する
+似たような未完了を処理する関数が出てたので指定の要素削除するTODOが出てきたのでその部分を
+　　共通化して関数にまとめた
+
+完了リストに追加する要素
+まずは完了ボタンの親要素を取得するのでparentNode
+list-row(親)、li(子)のテキストの{todoです}を取得する
+const text = addTarget.firestElmentChild(一番最初の要素).innerNode; // innerTextでli(子)の中の要素が取得できるバズです。
+
+TODO内容テキストを取得
+div以下は削除してdivだけを使い回したい　（div以下を初期化する）
+
+liタグの生成
+buttonタグ生成(戻すボタン)
+divタグの子要素に各要素を設定
+
+完了リストに追加 doucument.getElementById("complete-list").appendChild(addTarget);
+
+戻るボタンにイベントを付与していきます。
+backbuttonにイベントを付与する場合は、addEventlistener()
+
+　押された戻すボタンの親タグ(div)を完了リストから削除
+
+完了機能の時と同じようにテキストを取得していく
+未完了リストに追加する関数
