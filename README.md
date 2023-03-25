@@ -11,18 +11,18 @@
 - inputに対して　idを付与していく、add-textとする
 - 変数として受け取りたいのでconstを使用 、IDを取得、
 - 今回取得していきたいのはInputに入力された値なのでvalueを取得してあげると
-- このidが持っているinputの値をこのinputtextに格納しているはずです。
+Cこのidが持っているinputの値をこのinputtextに格納しているはずです。
 ---
 - 追加ボタンを押した時は常に初期化しておきたい
 - 先程の値を空にしてあげる　　value = "";
 
 # div・liタグ生成
-// javascriptでDOMを使うためには、　createErement関数を使用する。
-// これでHTMLのDOMを使用することができる、今回生成していきたいタグはdivタグ
-// javascript上でHTMLのDOMを生成することができる // javascriptの変数上に格納していく
-
-// クラス(div class="incomplete-area")を付与する方法、
-// div.className(プロパティ)
-// 続いてliタグ、リストのタグを生成していきましょう。
-// リストタグの中身に要素を格納していきたい時は、innerTextが使用できる
-// inputTextを使用してあげる。liタグの中にinputTextが取得される思う。
+- javascriptでDOMを使うためには、　createErement関数を使用する。
+- これでHTMLのDOMを使用することができる、今回生成していきたいタグはdivタグ
+- javascript上でHTMLのDOMを生成することができる // javascriptの変数上に格納していく
+---
+- クラス(div class="incomplete-area")を付与する方法、
+- div.className(プロパティ)
+- 続いてliタグ、リストのタグを生成していきましょう。
+- リストタグの中身に要素を格納していきたい時は、innerTextが使用できる
+- inputTextを使用してあげる。liタグの中にinputTextが取得される思う。
