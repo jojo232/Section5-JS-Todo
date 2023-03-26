@@ -113,3 +113,7 @@ import "./styles.css";</br>
 
 //buttonクリック処理</br>
 
+# 34.タスクの追加機能　(ボタン)
+// button(完了)タグ生成
+
+// button(削除)タグ生成
