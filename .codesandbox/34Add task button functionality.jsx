@@ -29,20 +29,6 @@ document
   
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##　34.タスクの追加機能(ボタン)
-import "./styles.css";
-
-const onClickAdd = () => {
-  const inputText = document.getElementById("add-text").value;
-  document.getElementById("add-text").value = "";
-  //テクストボックスの値を取得し、初期化する。
-
-  //dev生成
-  const div = document.createElement("div");
-  div.className = "list-row";
-
-  //liタグ生成
-  const li = document.createElement("li");
-  li.innerText = inputText;
 
   // button(完了)タグの生成
   const completeButton = document.createElement("button");
@@ -63,11 +49,8 @@ const onClickAdd = () => {
   div.appendChild(completeButton);
   div.appendChild(deleteButton);
 
-  // 未完了リストに追加
-  document.getElementById("incomplete-list").appendChild(div);
-};
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+  // 押された削除ボタンの親タグ(div)を未完了リストから削除
 
-//buttonクリック処理
-document
-  .getElementById("add-button")
-  .addEventListener("click", () => onClickAdd());
+  const deleteTarget = deleteButton.parentNode;
+  document.getElementById("incomplete-list").removeChild(deleteTarget);
