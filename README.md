@@ -130,3 +130,34 @@ import "./styles.css";</br>
 
 # 35.タスクの削除機能
 // 押された削除ボタンの親タグ(div)を未完了リストから削除
+
+# 36.タスク完了機能
+  // button(完了)タグの生成
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+  
+    // 押された完了ボタンの親タグ(div)を未完了リストから削除
+
+    //完了リストに追加する要素
+
+    /// TODO内容のテキストを取得
+
+    // div以下を初期化
+
+    //li　タグを生成
+
+    //buttonタグ生成
+
+
+    // divタグの子要素に各要素を設定
+
+    //　完了リストに追加
+
+
+
+    // 押された削除ボタンの親タグ(div)を未完了リストから削除
+    
+    
+    // 未完了リストから指定の要素を削除
+
