@@ -10,6 +10,11 @@
 ### addEventListene
 - 「addEventListener()」は、JavaScriptからさまざまなイベント処理を実行することができるメソッドになります。
 
+### createElement
+- 要素を作成するには document オブジェクトの createElement() メソッドを使用します。
+- 但し createElement() は要素を作成するだけで、DOMツリーに自動的に追加されるわけではありません。 作成した要素をDOMツリーに追加するためには、appendChild() メソッドや、insertBefore()
+- メソッドを使用します。
+
 
 # テキストボックスの値を取得し、初期化する。
 - onClickAdd 変数名、アロー関数
