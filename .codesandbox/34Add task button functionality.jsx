@@ -113,3 +113,14 @@ document
 // 未完了リストから指定の要素を削除
 
 
+  // button(完了)タグの生成
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    //完了リストに追加する要素
+    const addTarget = completeButton.parentNode;
+    const text = addTarget.firstElementChild.innerText;
+
+    /// TODO内容のテキストを取得
+    deleteFromIncompleteList(completeButton.parentNode);
+
