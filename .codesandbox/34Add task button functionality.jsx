@@ -1,4 +1,4 @@
-　### 33.タスクの追加機能(テキスト)
+## 33.タスクの追加機能(テキスト)
 
 import "./styles.css";
 
@@ -25,10 +25,9 @@ const onClickAdd = () => {
 //buttonクリック処理
 document
   .getElementById("add-button")
-  .addEventListener("click", () => onClickAdd());
-
----
-　### 33.タスクの追加機能(ボタン)
+  .addEventListener("click", () => onClickAdd())
+  
+##　33.タスクの追加機能(ボタン)
 import "./styles.css";
 
 const onClickAdd = () => {
