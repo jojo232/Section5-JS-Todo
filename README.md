@@ -15,6 +15,9 @@
 - 但し createElement() は要素を作成するだけで、DOMツリーに自動的に追加されるわけではありません。 作成した要素をDOMツリーに追加するためには、appendChild() メソッドや、insertBefore()
 - メソッドを使用します。
 
+### innerText
+- innerText は HTMLElement のプロパティで、ノードとその子孫の「レンダリングされている」テキスト内容を示します。
+
 
 # テキストボックスの値を取得し、初期化する。
 - onClickAdd 変数名、アロー関数
