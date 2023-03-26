@@ -117,3 +117,5 @@ import "./styles.css";</br>
 // button(完了)タグ生成
 
 // button(削除)タグ生成
+
+// divタグの子要素に各要素を設定する
