@@ -124,13 +124,7 @@ document
     /// TODO内容のテキストを取得
     deleteFromIncompleteList(completeButton.parentNode);
 
-    
-    
-    
-    
-    
-    
-    
+------------------------------------------------------------------------------------------------------------------------------------------------
     
     import "./styles.css";
 
@@ -201,6 +195,69 @@ const onClickAdd = () => {
 const deleteFromIncompleteList = (target) => {
   document.getElementById("incomplete-list").removeChild(target);
 };
+
+//buttonクリック処理
+document
+  .getElementById("add-button")
+  .addEventListener("click", () => onClickAdd());
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  import "./styles.css";
+
+const onClickAdd = () => {
+  const inputText = document.getElementById("add-text").value;
+  document.getElementById("add-text").value = "";
+  //テクストボックスの値を取得し、初期化する。
+
+  //dev生成
+  const div = document.createElement("div");
+  div.className = "list-row";
+
+  //liタグ生成
+  const li = document.createElement("li");
+  li.innerText = inputText;
+
+  // button(完了)タグの生成
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+
+    //　完了リストに追加する要素
+
+    //TODO内容にテキスト取得
+
+    // div以下を初期化
+
+    // liタグを生成
+
+
+    // buttonタグを生成
+
+
+    //divタグの子要素に各要素を設定する
+
+
+    //完了リストに登録
+  });
+
+  //button(削除)タグの生成
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    // 押された削除ボタンの親タグ(div)を未完了リストから削除
+  });
+
+  //divタグの子要素に各要素を設定する
+  div.appendChild(li);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
+
+  // 未完了リストに追加
+  document.getElementById("incomplete-list").appendChild(div);
+};
+
+//要素結合
 
 //buttonクリック処理
 document
