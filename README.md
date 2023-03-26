@@ -18,6 +18,12 @@
 ### innerText
 - innerText は HTMLElement のプロパティで、ノードとその子孫の「レンダリングされている」テキスト内容を示します。
 
+### parentNode
+- 親ノードの取得は「parentNode」を使用します。
+
+### removeChild
+- 既に存在しているノードを削除する方法について解説します
+
 
 # テキストボックスの値を取得し、初期化する。
 - onClickAdd 変数名、アロー関数
