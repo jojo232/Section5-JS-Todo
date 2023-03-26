@@ -56,3 +56,6 @@ document
 
   const deleteTarget = deleteButton.parentNode;
   document.getElementById("incomplete-list").removeChild(deleteTarget);
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+// 未完了リストから指定の要素を削除
