@@ -264,3 +264,24 @@ document
   .getElementById("add-button")
   .addEventListener("click", () => onClickAdd());
 
+  ------------------------------------------------------------------------------------------------------------------------------------------------
+
+    
+        // buttonタグを生成
+    const backButton = document.createElement("button");
+    backButton.innerText = "戻す";
+
+    backButton.addEventListener("click", () => {
+      //押された戻すボタンの親タグ(div)を完了リストから削除
+      const deleteTarget = backButton.parentNode;
+      document.getElementById("complete-list").removeChild(deleteTarget);
+
+      //テキスト取得していきたい
+      const text = backButton.parentNode.firstElementChild.innerText;
+    });
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------
+
+        //押された戻すボタンの親タグ(div)を完了リストから削除
+
+        //テキスト取得していきたい
