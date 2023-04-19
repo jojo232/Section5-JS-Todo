@@ -14,15 +14,35 @@ const onClickAdd = () => {
 // 1. 「add-text」というIDを持つ入力フィールドの値を取得します。
 // 2. 入力フィールドの値を空の文字列に設定します（次の入力のため）。
 // 3. createIncompleteList関数を呼び出し、入力されたテキストを渡します。
+
 <input type="text" id="add-text">
 <button onclick="onClickAdd()">Add</button>
 
+// 上記のHTMLコードでは、入力フィールドにIDが「add-text」に設定されており、ボタンには「onClickAdd」関数がクリックイベントにバインドされています。
+// この関数は、上記のJavaScriptコードで定義されているものです。
 ---------------------------------------------------------------------------------------
 
+ 
+---------------------------------------------------------------------------------------
 // 未完了リストから指定の要素を削除
 const deleteFromIncompleteList = (target) => {
   document.getElementById("incomplete-list").removeChild(target);
 };
+
+// 具体的には、以下のように機能します。
+
+// 1. 引数として渡されたtargetは、削除する要素のDOMノードです。
+// 2. 「incomplete-list」というIDを持つ親要素から、引数で渡されたターゲット要素を削除します。
+
+<ul id="incomplete-list">
+  <li>...</li>
+  <li>...</li>
+  <li>...</li>
+</ul>
+
+// 上記のHTMLコードでは、ul要素にIDが「incomplete-list」に設定されており、それぞれのli要素が未完了のリストアイテムです。
+// この関数は、指定されたli要素を削除するために使用されます。
+---------------------------------------------------------------------------------------
 
 //未完了リストに追加する関数
 const createIncompleteList = (text) => {
