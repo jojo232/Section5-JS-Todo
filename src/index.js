@@ -1,5 +1,6 @@
 import "./styles.css";
 
+---------------------------------------------------------------------------------------
 const onClickAdd = () => {
   // テキストボックスの値を取得し、初期化する
   const inputText = document.getElementById("add-text").value;
@@ -7,6 +8,16 @@ const onClickAdd = () => {
 
   createIncompleteList(inputText);
 };
+// このコードは、特定のボタンがクリックされたときに、入力されたテキストを取得し、未完了のリストにアイテムを追加する関数の一部です。
+// 具体的には、以下のように機能します。
+
+// 1. 「add-text」というIDを持つ入力フィールドの値を取得します。
+// 2. 入力フィールドの値を空の文字列に設定します（次の入力のため）。
+// 3. createIncompleteList関数を呼び出し、入力されたテキストを渡します。
+<input type="text" id="add-text">
+<button onclick="onClickAdd()">Add</button>
+
+---------------------------------------------------------------------------------------
 
 // 未完了リストから指定の要素を削除
 const deleteFromIncompleteList = (target) => {
