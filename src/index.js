@@ -29,6 +29,7 @@ const deleteFromIncompleteList = (target) => {
   document.getElementById("incomplete-list").removeChild(target);
 };
 
+// target = 削除するノード(今回の場合だとincomplete-list)
 // 具体的には、以下のように機能します。
 
 // 1. 引数として渡されたtargetは、削除する要素のDOMノードです。
